@@ -1,0 +1,109 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.jj≠ %%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+% Set applicant's data for header
+\name{Shivangi Mishra}
+\address{Bangalore, \linebreak India}
+\contacts{
+    \raggedleft % Aligns the content to the right
+    +91 8826003669 \linebreak
+    \mbox{mishrashivangi0703@gmail.com} \linebreak
+    linkedin.com/in/m-shivangi \linebreak
+    leetcode.com/u/shivangi073 \linebreak
+}
+\begin{document}
+
+    % Print the header
+    \makeheader
+
+    % Print the content
+    \begin{cvsection}{Skills}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \textbf {Programming Languages and Frameworks:} Python, Java, Angular, NodeJS, Django, Flask, React
+                \item \textbf {Databases: MongoDB, MySQL, Redis} 
+                \item \textbf {Infrastructure & Deployment :} Docker, Kubernetes, Git, Jenkins
+                \item \textbf {Certifications:} CCNA (Cisco Certified Networking Associate), Cisco Certified DevNet Associate
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    \begin{cvsection}{Employment}
+
+        \begin{cvsubsection}{Software Consulting Engineer}{Cisco}{\normalfont Aug/2022-Present}
+            \textit{Clients - Bank of America, CVS} \vspace{-0.2em}
+            \begin{itemize}
+                \item Designed and developed NCD Peer Review Tool from scratch to perform peer review on Network Change Documents, reducing manual effort by 97\%
+                \item Built and deployed five automation scripts using Python and the MEAN stack for Data Center services, enabling real-time retrieval of crucial information and efficient reporting to customers within minutes.
+                \item Developed a microservices-based solution from scratch using Python and the MEAN stack to execute scripts on Cisco\textquotesingle{}s network orchestration product, enabling seamless management of thousands of device configurations.
+                \item Designed and developed NCD Generator Tool from scratch which helped to generate NCD documents for Wireless Domain, effectively reducing manual efforts by 90\%
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Consulting Engineer}{Cisco}{\normalfont Aug/2021-July/2022}
+            \textit{Clients - Citibank, Telstra, Johnson \& Johnson, Providence Health, FEMA, Cigna Insurance} \vspace{-0.2em}
+            \begin{itemize}
+                \item Contributed to the Professional Services team for Cisco Wireless Products, focusing on documenting software analysis and release standard reports.
+			    \item Led bug scrubbing efforts for customer networks, identifying potential vulnerabilities and making data-driven decisions to mitigate risks and enhance network security
+		    \end{itemize}
+        \end{cvsubsection}
+%
+        \begin{cvsubsection}{Technical Graduate Intern}{Cisco}{\normalfont Jan/2021 - July/2021}
+            \textit{Software Automation and Orchestration Team} \vspace{-0.2em}
+            \begin{itemize}
+                \item Developed an Observability and Monitoring system to track the health of multiple networking software applications, utilizing Telegraf, InfluxDB, Chronograf, Kapacitor, and Shell Scripting, along with frontend technologies like Bootstrap, HTML, CSS, and jQuery.
+			    \item Developed an email alerts feature using corporate SMTP servers, leveraging Python3 (email, smtplib, ssl) for secure and efficient email notifications.
+            \end{itemize}
+        \end{cvsubsection}
+
+        \begin{cvsubsection}{\parbox[t]{0.6\textwidth}{\textbf{Amazon Campus Mentorship Program}}}{Amazon}{\normalfont Jan/2020 - June/2020}
+            \textit{PopColor Android App} \vspace{-0.2em} % Reduces the gap after this line
+            \begin{itemize}[leftmargin=1.5em]
+                \item Selected as one of 20 female students from IGDTUW for a six-month mentorship program
+                \item Mentored by Amazon employees on software development, career growth, and industry best practices.
+                \item Developed the Color Detection Android App - Pop Color. Technologies: Java, Native Android, Android Studio, PushNotification, Camera.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \begin{cvsection}{Education}
+        \begin{tabularx}{\textwidth}{Xr}
+            \textbf{Indira Gandhi Delhi Technical University for Women} & \textit{Aug 2018 - May 2021} \\
+        \end{tabularx}
+        \begin{itemize}
+            \item Masters in Computer Application. GPA: 8.14/10
+        \end{itemize}
+        
+        \begin{tabularx}{\textwidth}{Xr}
+            \textbf{Dyal Singh College, University of Delhi} & \textit{Aug 2015 - May 2018} \\
+        \end{tabularx}
+        \begin{itemize}
+            \item Bachelors in Computer Science. GPA: 8.16/10
+        \end{itemize}
+    \end{cvsection}
+
+
+\end{document}
